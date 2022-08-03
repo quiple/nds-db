@@ -1,1 +1,23 @@
 @charset "utf-8";
+* { -webkit-font-smoothing: none; font-smooth: never; font-family: Galmuri9, sans-serif; font-size: 10px; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; image-rendering: pixelated; font-feature-settings: "zero" 1; box-sizing: border-box; white-space: nowrap; }
+body { display: flex; justify-content: flex-start; align-items: center; background-image: url('./bg.png'); color: #000; flex-direction: column; }
+img { display: block; }
+h1 { font-family: Galmuri11, sans-serif; font-weight: 400; font-size: 24px; }
+#table-container-table_length,
+#table-container-table_filter { width: 50%; display: inline-flex; }
+#table-container-table_filter { justify-content: flex-end; }
+#table-container-table { border-collapse: collapse; }
+#table-container th { font-weight: 400; padding: 6px; cursor: pointer; }
+#table-container td { padding: 0; height: 42px; background-image: url('./td.png'); border-top: 1px solid #000; border-bottom: 1px solid #000; }
+#table-container td .cell { height: 100%; border: 1px solid #fff; border-left: none; }
+#table-container td .cell div { padding: 6px; height: 100%; background-image: url('./cell.png'); border: 1px solid #797979; display: flex; align-items: center; }
+#table-container td:first-child { width: 41px; padding: 0; border-left: 1px solid #000; }
+#table-container td:first-child .icon { height: 100%; display: flex; justify-content: center; align-items: center; border: 1px solid #fff; border-right: none; }
+#table-container td:last-child { font-variant-numeric: tabular-nums; border-right: 1px solid #000; }
+#table-container .dataTables_empty { padding: 0 7px !important; line-height: 40px; box-shadow: 1px 0 0 0 #fff inset, -1px 0 0 0 #fff inset; }
+#table-container-table_info { margin: 8px 0; }
+#table-container-table_paginate { display: flex; justify-content: center; gap: 8px; }
+#table-container-table_paginate span { display: flex; gap: 8px; }
+.paginate_button { font-variant-numeric: tabular-nums; }
+.paginate_button.current { text-decoration: underline; }
+.btn, .paginate_button { display: inline-flex; justify-content: center; align-items: center; padding: 0 5px 0 6px; height: 20px; background-image: url('./btn-bg.png'); border: 1px solid; border-image: url('./btn-border.png') 1; background-position-y: center; cursor: pointer; box-shadow: 0 0 0 1px #fff inset, 0 1px 0 1px #b2b2b2 inset, 0 -1px 0 1px #fff inset, 1px 0 0 1px rgba(0,0,0,.1) inset, -1px 0 0 1px rgba(0,0,0,.1) inset; color: #000; text-decoration: none; }

@@ -1,14 +1,43 @@
 <!doctype html>
-<html lang="ko">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>NDS 데이터베이스</title>
+  <title>NDS DB</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css">
+  <link rel="stylesheet" href="./files/style.css">
 </head>
 
 <body>
-  
+  <h1>Nintendo DS Database for Korea</h1>
+  <div id="table-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/datatables.net@latest/js/jquery.dataTables.min.js"></script>
+  <script src="./files/csv-to-html-table/js/jquery.csv.min.js"></script>
+  <script src="./files/csv-to-html-table/js/csv_to_html_table.js"></script>
+  <script>
+    function format_icon(icon) {
+      if (icon)
+        return '<div class="icon"><img src="./icons/' + icon + '.png"></div>';
+      else
+        return '';
+    }
+    function format_cell(cell) {
+      if (cell)
+        return '<div class="cell"><div>' + cell + '</div></div>';
+      else
+        return '';
+    }
+    CsvToHtmlTable.init({
+      csv_path: './data.csv',
+      element: 'table-container',
+      csv_options: {separator: ',', delimiter: '"'},
+      datatables_options: {"paging": true},
+      custom_formatting: [[0, format_icon], [1, format_cell], [2, format_cell], [3, format_cell], [4, format_cell], [5, format_cell], [6, format_cell], [7, format_cell]]
+    });
+  </script>
 </body>
 
 </html>
