@@ -19,5 +19,5 @@ h1 { font-family: Galmuri11, sans-serif; font-weight: 400; font-size: 24px; }
 #table-container-table_paginate { display: flex; justify-content: center; gap: 8px; margin-bottom: 16px; }
 #table-container-table_paginate span { display: flex; gap: 8px; }
 .paginate_button { font-variant-numeric: tabular-nums; }
-.paginate_button.current { text-decoration: underline; }
+.paginate_button.current { text-decoration: underline; cursor: default; }
 .btn, .paginate_button { display: inline-flex; justify-content: center; align-items: center; padding: 0 5px 0 6px; height: 20px; background-image: url('./btn-bg.png'); border: 1px solid; border-image: url('./btn-border.png') 1; background-position-y: center; cursor: pointer; box-shadow: 0 0 0 1px #fff inset, 0 1px 0 1px #b2b2b2 inset, 0 -1px 0 1px #fff inset, 1px 0 0 1px rgba(0,0,0,.1) inset, -1px 0 0 1px rgba(0,0,0,.1) inset; color: #000; text-decoration: none; }
