@@ -16,7 +16,7 @@ h1 { font-family: Galmuri11, sans-serif; font-weight: 400; font-size: 24px; }
 #table-container td:last-child { font-variant-numeric: tabular-nums; border-right: 1px solid #000; }
 #table-container .dataTables_empty { padding: 0 7px !important; line-height: 40px; box-shadow: 1px 0 0 0 #fff inset, -1px 0 0 0 #fff inset; }
 #table-container-table_info { margin: 8px 0; }
-#table-container-table_paginate { display: flex; justify-content: center; gap: 8px; }
+#table-container-table_paginate { display: flex; justify-content: center; gap: 8px; margin-bottom: 16px; }
 #table-container-table_paginate span { display: flex; gap: 8px; }
 .paginate_button { font-variant-numeric: tabular-nums; }
 .paginate_button.current { text-decoration: underline; }
