@@ -11,7 +11,7 @@ h1 { font-family: Galmuri11, sans-serif; font-weight: 400; font-size: 24px; }
 #table-container td { padding: 0; height: 42px; background-image: url('./td.png'); border-top: 1px solid #000; border-bottom: 1px solid #000; }
 #table-container td .cell { height: 100%; border: 1px solid #fff; border-left: none; }
 #table-container td .cell div { padding: 6px; height: 100%; background-image: url('./cell.png'); border: 1px solid #797979; display: flex; align-items: center; }
-#table-container td:first-child { width: 41px; padding: 0; border-left: 1px solid #000; }
+#table-container td:first-child { width: 42px; padding: 0; border-left: 1px solid #000; }
 #table-container td:first-child .icon { height: 100%; display: flex; justify-content: center; align-items: center; border: 1px solid #fff; border-right: none; }
 #table-container td:last-child { font-variant-numeric: tabular-nums; border-right: 1px solid #000; }
 #table-container .dataTables_empty { padding: 0 7px !important; line-height: 40px; box-shadow: 1px 0 0 0 #fff inset, -1px 0 0 0 #fff inset; }
