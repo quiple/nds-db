@@ -1,5 +1,5 @@
 @charset "utf-8";
-* { -webkit-font-smoothing: none; font-smooth: never; font-family: Galmuri9, sans-serif; font-size: 10px; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; image-rendering: pixelated; font-feature-settings: "zero" 1; box-sizing: border-box; }
+* { -webkit-font-smoothing: none; font-smooth: never; font-family: Galmuri9, sans-serif; font-size: 10px; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; image-rendering: pixelated; font-feature-settings: "zero" 1; box-sizing: border-box; white-space: nowrap; }
 body { display: flex; justify-content: flex-start; align-items: center; background-image: url('./bg.png'); color: #000; flex-direction: column; }
 img { display: block; }
 h1 { font-family: Galmuri11, sans-serif; font-weight: 400; font-size: 24px; }
